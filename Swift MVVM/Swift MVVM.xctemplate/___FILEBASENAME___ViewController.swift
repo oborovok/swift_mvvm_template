@@ -10,8 +10,7 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
-    lazy var viewManager: ___FILEBASENAMEASIDENTIFIER___ViewManager = ___FILEBASENAMEASIDENTIFIER___ViewManager(parentViewController: self)
-    lazy var logicManager: ___FILEBASENAMEASIDENTIFIER___LogicManager = {return ___FILEBASENAMEASIDENTIFIER___LogicManager()}()
+    lazy var viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel(parentViewController: self)
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -35,6 +34,9 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
 
 }
